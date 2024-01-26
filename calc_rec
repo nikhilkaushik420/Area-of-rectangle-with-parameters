@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+// calc_rec calculates the area of a rectangle given its length and width
+func calc_rec(length, width float64) float64 {
+	return length * width
+}
+
+func main() {
+	// Example usage: Calculate the area of a rectangle with length 5.0 and width 3.0
+	length := 5.0
+	width := 3.0
+
+	area := calc_rec(length, width)
+
+	fmt.Printf("The length of rectangle is %.2f\n The width is %.2f\n Total calculated area is %.2f\n", length, width, area)
+}
